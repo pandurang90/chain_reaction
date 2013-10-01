@@ -1,0 +1,11 @@
+.play_board div{
+  min-width: 20px;
+  min-height: 20px;
+  margin-left: 0px;
+  border: 1px solid;  
+}
+
+.play_board{
+  margin-left: 36%;
+  border-radius: 2px;
+}

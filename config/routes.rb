@@ -1,5 +1,6 @@
 ChainReaction::Application.routes.draw do
   get "users/index"
+  get "games/play"
 
   devise_for :users
 
