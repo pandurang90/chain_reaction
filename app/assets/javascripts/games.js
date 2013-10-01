@@ -1,3 +1,28 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+/*
+classes=>
+
+empty
+
+grey
+double_grey
+triple_grey
+
+blue
+double_blue
+triple_blue
+
+corner
+
+side 
+
+central
+
+*/
+
+$(document).ready(function(){
+  blue_image = "<img src='/assets/circle_blue.png'>"
+  $(".play_board div").click(function(e){
+    $(this).html(blue_image);
+  });
+
+});

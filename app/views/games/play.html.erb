@@ -1,9 +1,12 @@
 
-<% 0.upto(9) do |j| %>
+<% 0.upto(9) do |r| %>
   <div class = "row play_board">
-    <% 0.upto(9) do |i| %>
-      <div class = "span">
+    <% 0.upto(9) do |c| %>
+      <div class = "span empty <%= get_class(r,c) %>">
+        <%#=image_tag "circle_blue.png"%>
       </div>
     <%end%>
   </div>
 <%end%>
+<%= link_to "Pause","#",:class => "btn" %>
+<%= link_to "Finish","#",:class => "btn" %>
