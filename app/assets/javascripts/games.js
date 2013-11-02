@@ -24,6 +24,10 @@ $(document).ready(function(){
   red_image = "<img src='/assets/red.gif'>"
   $(".play_board div").click(function(e){
     $(this).html(blue_image);
+    if(!$(this).hasClass("blue"))
+    	$(this).addClass("blue");
+    $(this).addClass("double_blue")
+    $(this).addClass("triple_blue")
   });
 
 });
